@@ -1,0 +1,40 @@
+{
+  "name": "<%= packageName %>",
+  "version": "0.0.0",
+  "description": "<%= projectName %>",
+  "main": "src/<%= componentName %>.js",
+  "author": "<%= developerName %>",
+  "homepage": "https://github.com/<%= ghUser %>/<%= ghRepo %>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= ghUser %>/<%= ghRepo %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= ghUser %>/<%= ghRepo %>/issues"
+  },
+  "dependencies": {
+    "react": "^0.12.1",
+    "reactify": "^0.15.2"
+  },
+  "devDependencies": {
+    "react-component-gulp-tasks": "^0.1.1",
+    "gulp": "^3.8.10"
+  },
+  "browser": "src/<%= componentName %>.js",
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\" && exit 0"
+  },
+  "readmeFilename": "README.md",
+  "keywords": [
+    "react",
+    "react-component"
+  ]
+}

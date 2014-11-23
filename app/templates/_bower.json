@@ -1,0 +1,29 @@
+{
+  "name": "<%= packageName %>",
+  "version": "0.0.0",
+  "description": "<%= projectName %>",
+  "main": "dist/<%= packageName %>.min.js",
+  "homepage": "https://github.com/<%= ghUser %>/<%= ghRepo %>",
+  "authors": [
+    "<%= developerName %>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
