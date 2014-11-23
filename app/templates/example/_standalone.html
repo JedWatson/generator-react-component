@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+	<title><%= projectName %></title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="container">
+		<h1><%= projectName %></h1>
+		<h2><a href="http://<%= ghUser %>.github.io/<%= ghRepo %>/">View project on GitHub</a></h2>
+		<div id="app"></div>
+		<div class="hint">
+			The component above is provided by the standalone build, and React is loaded from cdnjs.
+		</div>
+		<div><a href="/">Back to the main example</a></div>
+		<div class="footer">
+			Copyright &copy; <%= currentYear %> <%= developerName %>.
+		</div>
+	</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.1/JSXTransformer.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react.js"></script>
+	<script src="standalone.js"></script>
+	<script type="text/jsx">
+		var Example = React.createClass({
+			render: function() {
+				return <<%= componentName %> />
+			}
+		});
+		React.render(<Example />, document.getElementById('app'));
+	</script>
+</body>
