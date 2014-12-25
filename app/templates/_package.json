@@ -13,7 +13,7 @@
     "url": "https://github.com/<%= ghUser %>/<%= ghRepo %>/issues"
   },
   "dependencies": {
-    "react": "^0.12.1",
+    "react": "^0.12.2",
     "reactify": "^0.17.1"
   },
   "devDependencies": {
