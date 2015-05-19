@@ -13,18 +13,11 @@
     "url": "https://github.com/<%= ghUser %>/<%= ghRepo %>/issues"
   },
   "dependencies": {
-    "react": "^0.12.2",
-    "reactify": "^0.17.1"
+    "react": "^0.13.3"
   },
   "devDependencies": {
-    "react-component-gulp-tasks": "^0.1.1",
-    "gulp": "^3.8.10"
-  },
-  "browser": "src/<%= componentName %>.js",
-  "browserify": {
-    "transform": [
-      "reactify"
-    ]
+    "react-component-gulp-tasks": "^0.7.0",
+    "gulp": "^3.8.11"
   },
   "browserify-shim": {
     "react": "global:React"
