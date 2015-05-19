@@ -1,6 +1,8 @@
 'use strict';
-var chalk = require('chalk'),
-	yeoman = require('yeoman-generator');
+
+var _ = require('lodash');
+var chalk = require('chalk');
+var yeoman = require('yeoman-generator');
 
 var ReactComponentGenerator = yeoman.generators.Base.extend({
 	
@@ -45,9 +47,9 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 		
 		this.prompt(prompts, function (props) {
 			this.log('\n');
-			this._.extend(this, props);
-			this.packageName = this._.slugify(this.projectName).toLowerCase();
-			this.componentName = this._.classify(this.projectName);
+			_.extend(this, props);
+			this.packageName = _.kebabCase(_.deburr(this.projectName));
+			this.componentName = _.capitalize(_.camelCase(this.projectName));
 			this.currentYear = new Date().getFullYear();
 			if (props.createDirectory) {
 				this.destinationRoot(this.packageName);
