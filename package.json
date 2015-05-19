@@ -33,8 +33,8 @@
     "app"
   ],
   "dependencies": {
-    "chalk": "^0.5.1",
-    "yeoman-generator": "^0.18.0"
+    "chalk": "^1.0.0",
+    "yeoman-generator": "^0.20.1"
   },
   "devDependencies": {
     "mocha": "*"
