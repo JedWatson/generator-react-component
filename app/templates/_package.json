@@ -24,8 +24,13 @@
     "react": "global:React"
   },
   "scripts": {
+    "build": "gulp clean && NODE_ENV=production gulp build",
+    "examples": "gulp dev:server",
+    "publish:site": "gulp publish:site",
+    "release": "gulp release",
+    "start": "gulp dev",
     "test": "echo \"no tests yet\" && exit 0",
-    "start": "gulp dev"
+    "watch": "gulp watch:lib"
   },
   "readmeFilename": "README.md",
   "keywords": [
