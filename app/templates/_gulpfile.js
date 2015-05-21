@@ -18,7 +18,8 @@ var taskConfig = {
 			'classnames',
 			'react',
 			'react/addons'
-		]
+		],
+		lib: 'lib'
 	},
 
 	example: {
