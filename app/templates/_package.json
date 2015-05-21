@@ -24,7 +24,8 @@
     "react": "global:React"
   },
   "scripts": {
-    "test": "echo \"no tests yet\" && exit 0"
+    "test": "echo \"no tests yet\" && exit 0",
+    "start": "gulp dev"
   },
   "readmeFilename": "README.md",
   "keywords": [

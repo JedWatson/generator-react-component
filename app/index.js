@@ -89,7 +89,7 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 			'\n' +
 			'\nYour component is in /src and your examples are in /example/src.' +
 			'\n' +
-			'\nType ' + chdir + '"gulp dev" to run the development build and server tasks.' +
+			'\nType ' + chdir + '"npm start" to run the development build and server tasks.' +
 			'\n'
 		);
 	}
