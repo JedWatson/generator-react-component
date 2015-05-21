@@ -71,10 +71,10 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 			this.template('src/_Component.js', 'src/' + this.componentName + '.js');
 		},
 		examples: function() {
-			this.copy('example/app.less', 'example/src/app.less');
-			this.template('example/_app.js', 'example/src/app.js');
+			this.copy('example/example.less', 'example/src/example.less');
+			this.copy('example/.gitignore', 'example/src/.gitignore');
+			this.template('example/_example.js', 'example/src/example.js');
 			this.template('example/_index.html', 'example/src/index.html');
-			this.template('example/_standalone.html', 'example/src/standalone.html');
 		}
 	},
 	
