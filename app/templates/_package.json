@@ -17,6 +17,9 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
+    "babel-eslint": "^3.1.1",
+    "eslint": "^0.21.0",
+    "eslint-plugin-react": "^2.3.0",
     "react-component-gulp-tasks": "^0.7.0",
     "gulp": "^3.8.11"
   },
@@ -26,6 +29,7 @@
   "scripts": {
     "build": "gulp clean && NODE_ENV=production gulp build",
     "examples": "gulp dev:server",
+    "lint": "eslint ./; true",
     "publish:site": "gulp publish:examples",
     "release": "gulp release",
     "start": "gulp dev",
