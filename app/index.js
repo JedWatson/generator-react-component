@@ -61,6 +61,8 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 	writing: {
 		project: function() {
 			this.copy('editorconfig', '.editorconfig');
+			this.copy('eslintignore', '.eslintignore');
+			this.copy('eslintrc', '.eslintrc');
 			this.copy('gitignore', '.gitignore');
 			this.template('_bower.json', 'bower.json');
 			this.template('_gulpfile.js', 'gulpfile.js');
@@ -72,7 +74,7 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 		},
 		examples: function() {
 			this.copy('example/example.less', 'example/src/example.less');
-			this.copy('example/.gitignore', 'example/src/.gitignore');
+			this.copy('example/gitignore', 'example/src/.gitignore');
 			this.template('example/_example.js', 'example/src/example.js');
 			this.template('example/_index.html', 'example/src/index.html');
 		}
