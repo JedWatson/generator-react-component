@@ -1,13 +1,13 @@
-var React = require('react'),
-	<%= componentName %> = require('<%= packageName %>');
+var React = require('react');
+var <%= componentName %> = require('<%= packageName %>');
 
 var App = React.createClass({
-	render: function() {
+	render () {
 		return (
 			<div>
 				<<%= componentName %> />
 			</div>
-		)
+		);
 	}
 });
 

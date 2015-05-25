@@ -2,10 +2,10 @@ var React = require('react');
 
 var <%= componentName %> = React.createClass({
 	
-	render: function() {
+	render() {
 		return <div><%= projectName %></div>;
 	}
 	
 });
 
-module.exports = <%= componentName %>;
+export default <%= componentName %>;
