@@ -10,7 +10,7 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 		this.pkg = require('../package.json');
 	},
 	
-	prompting: function() {
+	prompting_init: function() {
 		var done = this.async();
 		
 		this.log(
@@ -26,18 +26,58 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 			name: 'projectName',
 			message: 'First, what is the name of your component?',
 			default: 'My Component'
+		}];
+		
+		this.prompt(prompts, function (props) {
+			_.extend(this, props);
+			this.packageName = _.kebabCase(_.deburr(this.projectName));
+			if (this.packageName.slice(0, 6) !== 'react-') {
+				this.packageName = 'react-' + this.packageName;
+			}
+			this.componentName = _.capitalize(_.camelCase(this.projectName));
+			this.currentYear = new Date().getFullYear();
+			done();
+		}.bind(this));
+	},
+	
+	prompting_names: function() {
+		var done = this.async();
+		
+		var prompts = [{
+			type: 'input',
+			name: 'packageName',
+			message: 'What is the ClassName for your component?',
+			default: this.componentName
+		}, {
+			type: 'input',
+			name: 'packageName',
+			message: 'What will the npm package name be?',
+			default: this.packageName
 		}, {
 			type: 'input',
 			name: 'developerName',
 			message: 'What is your name? (for copyright notice, etc.)'
-		}, {
+		}];
+		
+		this.prompt(prompts, function (props) {
+			_.extend(this, props);
+			done();
+		}.bind(this));
+	},
+	
+	prompting_project: function() {
+		var done = this.async();
+		
+		var prompts = [{
 			type: 'input',
 			name: 'ghUser',
-			message: 'What is your GitHub Username?'
+			message: 'What is your GitHub Username?',
+			default: _.capitalize(_.camelCase(this.developerName))
 		}, {
 			type: 'input',
 			name: 'ghRepo',
-			message: 'What is the name of the GitHub repo this will be published at?'
+			message: 'What is the name of the GitHub repo this will be published at?',
+			default: this.packageName
 		}, {
 			type: 'confirm',
 			name: 'createDirectory',
@@ -46,14 +86,11 @@ var ReactComponentGenerator = yeoman.generators.Base.extend({
 		}];
 		
 		this.prompt(prompts, function (props) {
-			this.log('\n');
 			_.extend(this, props);
-			this.packageName = _.kebabCase(_.deburr(this.projectName));
-			this.componentName = _.capitalize(_.camelCase(this.projectName));
-			this.currentYear = new Date().getFullYear();
 			if (props.createDirectory) {
 				this.destinationRoot(this.packageName);
 			}
+			this.log('\n');
 			done();
 		}.bind(this));
 	},
