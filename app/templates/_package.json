@@ -17,8 +17,8 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel-eslint": "^3.1.1",
-    "eslint": "^0.21.0",
+    "babel-eslint": "^3.1.9",
+    "eslint": "^0.21.2",
     "eslint-plugin-react": "^2.3.0",
     "react-component-gulp-tasks": "^0.7.0",
     "gulp": "^3.8.11"
