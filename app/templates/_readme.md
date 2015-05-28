@@ -11,7 +11,7 @@ To build the examples locally, run:
 
 ```
 npm install
-gulp dev
+npm start
 ```
 
 Then open [`localhost:8000`](http://localhost:8000) in a browser.
