@@ -36,7 +36,6 @@
     "test": "echo \"no tests yet\" && exit 0",
     "watch": "gulp watch:lib"
   },
-  "readmeFilename": "README.md",
   "keywords": [
     "react",
     "react-component"
