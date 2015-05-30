@@ -1,6 +1,6 @@
 {
   "name": "generator-react-component",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Yeoman generator for ReactJS Component projects",
   "license": "MIT",
   "main": "app/index.js",
