@@ -2,7 +2,7 @@
   "name": "<%= packageName %>",
   "version": "0.0.0",
   "description": "<%= projectName %>",
-  "main": "src/<%= componentName %>.js",
+  "main": "lib/<%= componentName %>.js",
   "author": "<%= developerName %>",
   "homepage": "https://github.com/<%= ghUser %>/<%= ghRepo %>",
   "repository": {
