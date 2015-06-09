@@ -13,15 +13,15 @@
     "url": "https://github.com/<%= ghUser %>/<%= ghRepo %>/issues"
   },
   "dependencies": {
-    "classnames": "^2.1.1",
+    "classnames": "^2.1.2",
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel-eslint": "^3.1.9",
-    "eslint": "^0.21.2",
-    "eslint-plugin-react": "^2.3.0",
+    "babel-eslint": "^3.1.14",
+    "eslint": "^0.22.1",
+    "eslint-plugin-react": "^2.5.0",
     "react-component-gulp-tasks": "^0.7.0",
-    "gulp": "^3.8.11"
+    "gulp": "^3.9.0"
   },
   "browserify-shim": {
     "react": "global:React"
