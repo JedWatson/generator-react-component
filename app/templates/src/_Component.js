@@ -2,7 +2,7 @@ var React = require('react');
 
 var <%= componentName %> = React.createClass({
 	
-	render() {
+	render () {
 		return <div><%= projectName %></div>;
 	}
 	
