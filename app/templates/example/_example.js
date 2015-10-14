@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var <%= componentName %> = require('<%= packageName %>');
 
 var App = React.createClass({
@@ -11,4 +12,4 @@ var App = React.createClass({
 	}
 });
 
-React.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
