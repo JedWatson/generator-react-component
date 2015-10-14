@@ -16,8 +16,7 @@ var taskConfig = {
 		name: '<%= componentName %>',
 		dependencies: [
 			'classnames',
-			'react',
-			'react/addons'
+			'react'
 		],
 		lib: 'lib'
 	},
