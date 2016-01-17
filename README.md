@@ -88,4 +88,4 @@ I'd love to hear it. Open an issue or submit a PR.
 
 ## License
 
-MIT. Copyright (c) Jed Watson 2015.
+[MIT License](http://en.wikipedia.org/wiki/MIT_License). Copyright (c) 2016 Jed Watson.
